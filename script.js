@@ -26,6 +26,7 @@ function verificar() {
             } else {
                 img.setAttribute('src', 'velhinho.jpg')
             }
+            document.body.style.background = 'linear-gradient(90deg, #efd5ff 0%, #515ada 100%)'
         } else if (fsex[1].checked) {
             genero = 'mulher'
             if (idade >= 0 && idade < 10) {
@@ -37,7 +38,10 @@ function verificar() {
             } else{
                 img.setAttribute('src', 'velhinha.jpg')
             }
+            document.body.style.background = 'linear-gradient(90deg, #fff 0%, #d53369 100%)'
+            document.body.style.background = 'opacity'
         }
+        
         res.style.textAlign = 'center'
         res.style.fontWeight = 'bold'   
         
